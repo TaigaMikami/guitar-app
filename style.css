@@ -1,0 +1,56 @@
+html {
+  font-size: 10px;
+  background-image: url(img/guitar_back.jpg);
+  background-size: cover;
+}
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keys {
+  color: white;
+  /*display: flex; divのタグを横並びにする*/
+  display: flex;
+  /*flex: 1;*/
+  /*高さ100%に設定*/
+  min-height: 50vh;
+  /*cross axis(縦軸)の中央*/
+  align-items: center;
+  /*main axis(横軸)の中央*/
+  justify-content: center;
+}
+
+.key {
+  /*囲み枠*/
+  border: .4rem solid white;
+  /*角丸*/
+  border-radius: 50px;
+  margin: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  background: rgba(0,100,100,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(2.0);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
